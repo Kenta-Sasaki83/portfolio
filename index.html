@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポートフォリオ | Kenta Sasaki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <h1>Kenta Sasaki Portfolio</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 自己紹介 -->
+  <section id="about">
+    <h2>About</h2>
+    <p>こんにちは、佐々木健太です。Webエンジニアを目指して学習中です。<br>
+       JavaScript / HTML / CSS / Python を学び、Webアプリ開発に取り組んでいます。</p>
+  </section>
+
+  <!-- スキル -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>HTML / CSS</p>
+    <div class="skills-bar"><span style="width:80%"></span></div>
+    <p>JavaScript</p>
+    <div class="skills-bar"><span style="width:70%"></span></div>
+    <p>Python</p>
+    <div class="skills-bar"><span style="width:60%"></span></div>
+  </section>
+
+  <!-- 制作物 -->
+  <section id="works">
+    <h2>Works</h2>
+
+    <!-- じゃんけんゲーム -->
+    <div class="work">
+      <h3>じゃんけんゲーム</h3>
+      <p>JavaScriptで制作。ユーザーとコンピュータで勝敗を判定します。</p>
+      <div id="rock-paper-scissors">
+        <button data-choice="グー">グー</button>
+        <button data-choice="チョキ">チョキ</button>
+        <button data-choice="パー">パー</button>
+        <p id="rps-result"></p>
+      </div>
+      <a href="#">GitHub リンク</a> | <a href="#">デモを見る</a>
+    </div>
+
+    <!-- ToDoアプリ -->
+    <div class="work">
+      <h3>ToDoアプリ</h3>
+      <p>JavaScriptでタスクを追加・削除できるWebアプリ。</p>
+      <div id="todo-app">
+        <input type="text" id="todo-input" placeholder="タスクを入力">
+        <button id="add-todo">追加</button>
+        <ul id="todo-list"></ul>
+      </div>
+      <a href="#">GitHub リンク</a> | <a href="#">デモを見る</a>
+    </div>
+
+    <!-- お天気アプリ -->
+    <div class="work">
+      <h3>お天気アプリ（日本語入力対応）</h3>
+      <p>都市名を日本語で入力して現在の天気を取得できます。<br>
+      入力のポイント: 都市名は英語で入力してください（例：Tokyo、Osaka、Sendai）。<br>
+      日本語入力も一部対応していますが、正確に取得できない場合があります。</p>
+      <div id="weather-app">
+        <input type="text" id="city-input" placeholder="都市名を入力">
+        <button id="get-weather">天気を取得</button>
+        <div id="weather-result"></div>
+      </div>
+      <a href="#">GitHub リンク</a> | <a href="#">デモを見る</a>
+    </div>
+
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourname" target="_blank">github.com/yourname</a></p>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2025 Kenta Sasaki</p>
+  </footer>
+
+  <!-- JS読み込み -->
+  <script src="main.js"></script>
+</body>
+</html>
